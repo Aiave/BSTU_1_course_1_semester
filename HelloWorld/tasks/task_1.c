@@ -1,17 +1,5 @@
-﻿/*
+﻿#include <stdio.h>
 
-
-void print();
-void print();
-void print();
-void print();
-void print();
-void print();
-void print();
-void print();	-- норм
-
-void print() {  }
-void print() {  }	-- ошибка!
-
-
-*/
+void print() {
+	printf("Hello, world!");
+}

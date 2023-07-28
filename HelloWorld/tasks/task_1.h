@@ -3,15 +3,14 @@
 
 #include <stdio.h>
 
-void print() {
-	printf("hello world");
-}
-
+void print();
 
 #endif //досюда
 
-//без этой штуки, если вызвать файл 2 раза, код ебанёт
-//по сути вместо #include "tasks/task_1.h" вставляется кусок кода, е
+
+
+//без этой штуки, если вызвать файл 2 раза, код упадёт
+//по сути вместо #include "tasks/task_1.h" вставляется кусок кода
 
 /*
 
@@ -19,13 +18,12 @@ void print() {
 #include "tasks/task_1.h"
 #include "tasks/task_1.h"
 
-
-превратится, во что-то вроде:
-#ifndef TASK_1		-- TASK_1 ещё не существует, то выполнить код с 24 по 27 строки
+превратится во что-то вроде:
+#ifndef TASK_1		-- TASK_1 ещё не существует, то выполнить код с 22 по 25 строки
 #define TASK_1		-- объявить макрос TASK_1
 void print() {}		-- вставить код
 #endif
-#ifndef TASK_1		-- TASK_1 уже создан, поэтому пропустить код с 28 по 31 строки
+#ifndef TASK_1		-- TASK_1 уже создан, поэтому пропустить код с 26 по 29 строки
 #define TASK_1
 void print1() {}
 #endif
@@ -42,7 +40,7 @@ void print1() {}		-- неправильно!
 //это просто команды препроцессора
 
 /*
-
+В заголовочных файлах (.h):
 
 void print();
 void print();
@@ -53,8 +51,6 @@ void print();
 void print();
 void print();	-- норм
 
-void print() {  }
-void print() {  }	-- ошибка!
-
-
+void print() {}
+void print() {}	-- ошибка!
 */
