@@ -10,9 +10,17 @@
     <ClCompile Include="main.c">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="tasks\task_manager.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="tasks\task_1.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="tasks\task_2.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="tasks\task_1.h" />
-    <ClInclude Include="tasks\task_2.h" />
+    <ClInclude Include="tasks\tasks.h" />
   </ItemGroup>
 </Project>
