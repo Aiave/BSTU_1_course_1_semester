@@ -1,6 +1,7 @@
 ﻿#include <stdio.h>
 #include <stdlib.h>
 
+//задание 1
 void task_1()
 {
 	system("cls");

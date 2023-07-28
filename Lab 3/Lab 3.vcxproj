@@ -183,6 +183,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.c" />
+    <ClCompile Include="tasks\additional_tasks.c" />
     <ClCompile Include="tasks\task_manager.c" />
     <ClCompile Include="tasks\task_1.c" />
     <ClCompile Include="tasks\task_1_upd.c" />

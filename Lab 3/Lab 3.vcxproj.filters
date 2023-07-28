@@ -25,6 +25,9 @@
     <ClCompile Include="tasks\task_3.c">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="tasks\additional_tasks.c">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="tasks\tasks.h" />
