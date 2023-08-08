@@ -14,7 +14,9 @@ void task_2_nested_operators()
 	scanf_s("%lf", &x);
 
 	if (x < -1)
+	{
 		function_value = 4 * x + 1;
+	}
 	else
 	{
 		if (x > 10)

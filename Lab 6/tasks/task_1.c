@@ -14,11 +14,11 @@ void task_1()
 		scanf_s("%d", &month);
 	} while (month < 1 || month > 12);
 
-	name_of_the_month(month);
-	season(month);
+	print_month(month);
+	print_season(month);
 }
 
-void name_of_the_month(int month)
+void print_month(int month)
 {
 	switch (month)
 	{
@@ -87,7 +87,7 @@ void name_of_the_month(int month)
 	}
 }
 
-void season(int month)
+void print_season(int month)
 {
 	switch (month)
 	{
